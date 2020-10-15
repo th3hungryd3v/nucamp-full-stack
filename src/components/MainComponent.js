@@ -3,6 +3,7 @@ import {Switch, Route, Redirect } from 'react-router-dom';
 import NavComponent from './NavComponent'
 import HomeComponent from './HomeComponent'
 import OrderComponent from './OrderComponent'
+import DrawStrawComponent from './DrawStrawComponent'
 
 
 //*****had to run yarn add react react-dom reactstrap
@@ -16,6 +17,7 @@ class MainComponent extends Component {
                 <Switch>
                     <Route path='/home' component= {HomeComponent} />
                     <Route exact path='/order' component= {OrderComponent} />
+                    <Route exact path='/drawstraw' component={DrawStrawComponent}/>
                     <Redirect to='/home'/>
                 </Switch>
                 {/* foot can go here similar to navbar */}
