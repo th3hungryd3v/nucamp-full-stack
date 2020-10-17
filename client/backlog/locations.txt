@@ -1,0 +1,13 @@
+
++Locations tab on Navbar will link to Locations page. 
+Locations page will render a list of Address, hours, contact and a Google Map thumbnail respectively.
+Click to Google Map thumbnail to link to google map for direction.
+
++Locations on Footer:
+If restaurant has only 1 location, click to the address under Contact info will link to Google Map for direction.
+If restaurant has more than 1 to 3 locations: render a list of locations:
+ Locations:
+ 123 Taco St
+ 456 Nacho Ave
+ 789 Margarita Blvd
+Link this Locations tab to Locations Page.
