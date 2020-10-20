@@ -1,0 +1,32 @@
+render breadcrumb for home/reservation
+if state reservationConfirmed is false render below.
+2 containing components which make up have the view port on md and larger screens. 
+Stacking with the left component on top for mobile. 
+
+Form component perform check to see if logged in is true. If not return a centered 
+title and login button to launch login modal. Login modal can be reused from order page. 
+If true return form component with userName and function to change form state data passed as props
+(state data: dateRequested,timeRequested,tableRequested, specialReqRequested)
+ with the following items as form components that update corresponding state as
+ well as get value from state.
+ Date selection with only current and future dates allowed.
+ Time selection wit only future times allowed. 
+ Table prefernce select with options table/booth
+ Special requests text box.
+ Submit button with text 'Make Reservation'
+ on submit use verifyReservation function to call renderDetails component
+ and use state details to set new state details of confirmedDate, confirmedTime etc.
+ This allow a future option to check if these details are available from server.
+
+
+
+detailsComponent if logged in is not true return title.
+If true return title, availablity status from state, as well as 
+details from state. If server returned error render error message in red.
+Confirm Details button that calls confirmReservations function and sets 
+state for reservationConfirmed to true and leaves 
+
+if state reservationConfirmed is true render sucess component(send email?).
+A title with 'Reservaion confirmed'
+sub title with email sent to users email address
+details of reservation below
