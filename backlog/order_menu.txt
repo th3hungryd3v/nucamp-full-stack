@@ -1,0 +1,25 @@
+Container approximately 75% the height of the page approximately 
+25%(4 columns) on lg screen and 10/12 on md break
+background #fff
+props: itemsCurInOrder  list of state objects for items added to order and their info.
+function to alter state of objects to order
+
+a tab element always showing that on click moves the menu into/out of view
+
+Item component(mapped) that displays product thumbnail, title, price, and quanity. 
+A plus and minus that allows the quanity to increase or decrease.
+A custom selection component that opens a modal  with a heading, subheading,
+and text box with place holder. A submit button that calls the funtion to change that items
+special instructions.
+props: state data for curItemsInOrder that includes pic,title, price, custom instructions
+    and quanity. Function to alter state of items in order from the parent element. 
+A horizontal line below each item.
+
+Small form component with radio buttons for delivery pickup, and dine in with only
+one options selectable at a time.  A select component with
+options for only future times of that day and as soon as possible as options. 
+
+A display price component that takes all the prices from state data prop and adds it together. 
+
+A button component that sends all state data plus form data to a a function on the menu page
+this.props.confirmOrder(orderInfo)? 
