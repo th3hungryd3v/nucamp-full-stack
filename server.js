@@ -8,6 +8,9 @@ const app = express();
 const user= {item:'Pollo Taco', price:6.50}
 
 app.use(express.static('client/build'))
+app.use('/owner',express.static('admin-client'))
+app.use('/images',express.static(__dirname+'/images/'))
+
 
 app.use('/menu',(req, res)=>{
     res.statusCode = 200;
